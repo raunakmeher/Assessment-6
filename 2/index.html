@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.overlay {
+  background: url('laptop-1846277_1280.jpg') no-repeat center center/cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.login-container {
+  background:  rgba(0, 0, 0, 0.6);
+  padding: 30px 40px;
+  border-radius: 8px;
+  width: 350px;
+  text-align: center;
+  color: #fff;
+}
+.avatar {
+  margin-top: -78px;
+}
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.checkbox {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+.checkbox a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.checkbox a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="overlay">
+    <div class="login-container">
+      <div class="avatar">
+        <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Avatar">
+      </div>
+      <h2>LOGIN WINDOW</h2>
+      <form>
+        <input type="email" placeholder="Your Email Address" required>
+        <input type="password" placeholder="Your Password" required>
+        <div class="checkbox">
+          <input type="checkbox" id="terms">
+          <label for="terms">Agree With <a href="#">Terms & Condition</a></label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
